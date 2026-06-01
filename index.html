@@ -63,6 +63,7 @@
         justify-content: center;
         align-items: center;
         background-color: #030303;
+        z-index: 1;
     }
 
     .questions {
@@ -334,15 +335,47 @@
         }
 
         .separador {
-            width: 100%;
-            height: 100px;
-            background: #000;
-            border-top: 2px solid transparent;
-            border-radius: 50% 50% 0 0 / 100% 100% 0 0; 
-            box-shadow: 0 -4px 15px rgba(220, 0, 120, 0.6);
-            margin-top: -30px;
+            box-sizing: border-box;
             position: relative;
+            overflow: hidden;
+            height: 8rem;
+            z-index: 100;
         }
+
+        .caja-curva {
+            box-sizing: border-box;
+            position: absolute;
+            height: 180%;
+            top: 0;
+            left: -5%;
+            width: 110%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            border-top-left-radius: 50% 60%;
+            border-top-right-radius: 50% 60%;
+            border-bottom: none;
+            background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(26, 25, 25, 0.1) 100%), rgb(0, 0, 0);
+            z-index: 100;
+        }
+
+        .container-curva {
+            width: 100%;
+        }
+
+        .caja-curva::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -7%; right: 0;
+            height: 100%;
+            width: 115%;
+            border-top-left-radius: 50% 80% ;
+            border-top-right-radius: 50% 85% ;
+            border-top: 5px solid rgba(220, 30, 70, 0.9);
+            background: transparent;
+            box-shadow: 0 0 12px 2px rgba(220, 30, 70, 0.5);
+            z-index: 101;
+        }  
 
         .cards-section {
             padding: 40px 4%;
@@ -788,15 +821,15 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="#">Español</a>
+                                                <a class="dropdown-item" href="#" onclick="setLang('es')">Español</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">Inglés</a>
+                                                <a class="dropdown-item" href="#" onclick="setLang('en')" >Inglés</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active text-white btn-login" aria-current="page" href="#">Iniciar sesión</a>
+                                        <a class="nav-link active text-white btn-login" aria-current="page" data-i18n="login" href="#">Iniciar sesión</a>
                                     </li>
                                 </ul>
                             </div>
@@ -821,7 +854,13 @@
                             </div>
                             
                         </div>
-                        <div class="separador"></div>
+                        <div class="separador">
+                            <div class="container-curva">
+                                <div class="caja-curva">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1236,6 +1275,8 @@
         });
         }
     </script>
+
+    <script src="script.js"></script>
 
     <!-- Bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
