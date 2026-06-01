@@ -107,6 +107,7 @@ const translations = {
         faq6A: "Wolflix's biggest hit in terms of plays is the iconic series EVA LA TRAILERA.",
 
         // Footer
+
         footerEmailDesc: "Ready to watch WolFlix? Enter your email to create or restart your Wolflix membership.",
         footerBtn: "Get started",
         footerPhone: "Questions? Call 01 800 519 1570",
