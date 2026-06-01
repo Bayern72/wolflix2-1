@@ -165,8 +165,12 @@
     }
 
     .footer {
-        height: 300px;
-        background-color: #c073f3;
+        height: 870px;
+        background-color: #030303;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-item {
@@ -492,7 +496,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 10%;
+            border-radius: 5%;
             overflow: hidden;
         }
 
@@ -646,12 +650,114 @@
             background-color: #2d2d2d;
             color: white;
             padding: 20px 30px !important;
+            font-size: 20px;
         }
 
 
         .accordion-body:hover {
             background-color: #2d2d2d;
             color: white;
+        }
+
+        .mini-log-container {
+            height: 30%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mini-log-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .mini-log-text p {
+            font-family: 'Inter', 'Sans Serif';
+            color: white;
+            font-size: 17px;
+        }
+
+        .form-mini-log {
+            width: 65%;
+        }
+
+        .title-footer {
+            height: 20%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+        }
+
+        .title-footer h4 {
+            font-family: 'Inter', 'Sans Serif';
+            font-weight: 600;
+            font-size: 20px;
+            color: #aaa;
+        }
+
+        .container-footer {
+            height: 60%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contain-list {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lista-footer ul {
+            list-style: none;
+        }
+
+        .lista-footer ul li {
+            margin-bottom: 12px;
+            color: #aca7a7;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .phone-number {
+            text-decoration: underline;
+        }
+
+        .footer-end {
+            height: 180px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-language {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        .copy h5 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: rgb(163, 160, 160);
+        }
+
+        .copy p {
+            font-size: 15px;
+            margin-bottom: 25px;
+            color: rgb(109, 108, 108);
         }
         
 
@@ -898,7 +1004,7 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 questions">
 
                 <div class="title-questions">
-                    <h2>Preguntas frecuente</h2>
+                    <h2>Preguntas frecuentes</h2>
                 </div>
 
                 <div class="container-questions">
@@ -911,7 +1017,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+                                <div class="accordion-body">Wolflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet. Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -921,7 +1027,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+                                <div class="accordion-body">Disfruta de Wolflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $ 18.900 hasta $ 44.900/mes.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -931,7 +1037,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body">Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Wolflix para ver contenido al instante a través de wolflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Wolflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos. Además, puedes descargar tus series favoritas con la app para iOS o Android. Con la función de descarga, puedes ver contenido donde vayas y sin conexión a internet. Lleva Wolflix contigo adonde sea.</div>
                             </div>
                         </div>
 
@@ -942,7 +1048,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body">Wolflix es flexible. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Inicia o cancela tu cuenta cuando quieras.</div>
                             </div>
                         </div>
 
@@ -953,7 +1059,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body">Wolflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.</div>
                             </div>
                         </div>
 
@@ -964,7 +1070,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body">En Wolflix el mayor exito que ha tenido dentro de sus reproducciones es la iconica serie de EVA LA TRAILERA</div>
                             </div>
                         </div>
 
@@ -975,7 +1081,147 @@
 
             </div>
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 footer"></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 footer">
+
+                <div class="mini-log-container">
+
+                    <div class="mini-log-text">
+                        <p>¿Quieres ver WolFlix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Wolflix.</p>
+                    </div>
+
+                    <div class="form-mini-log d-flex justify-content-center">
+
+                        <form class="d-flex w-100" style="max-width: 830px;" role="search">
+                            <div class="input-wrapper col-8 col-sm-8 col-md-8">
+                                <input class="form-control me-2" type="email" id="email-input" placeholder=" " />
+                                <label for="email-input">Email</label>
+                            </div>
+                            <button class="btn btn-outline-success col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 " type="submit">  Comenzar <svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightMedium" data-icon-id=":r4:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="m15.586 12-7.293 7.293 1.414 1.414 8-8a1 1 0 0 0 0-1.414l-8-8-1.414 1.414z" clip-rule="evenodd"></path></svg></button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="container-footer">
+
+                    <div class="title-footer">
+                        <h4>¿Preguntas? Llama al <span class="phone-number">01 800 519 1570</span></h4>
+                    </div>
+
+                    <div class="row contain-list">
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                            
+                            <div class="lista-footer">
+                                
+                                <ul>
+                                    <li>Preguntas frecuentes</li>
+                                    <li>Relaciones con inversionistas</li>
+                                    <li>Formas de ver</li>
+                                    <li>Información corporativa</li>
+                                    <li>Solo en Wolflix</li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+
+                            <div class="lista-footer">
+                                
+                                <ul>
+                                    <li>Centro de ayuda</li>
+                                    <li>Empleo</li>
+                                    <li>Términos de uso</li>
+                                    <li>Privacidad</li>
+                                    <li>Contáctanos</li>
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+
+                            <div class="lista-footer">
+                                
+                                <ul>
+                                    <li>Cuenta</li>
+                                    <li>Canjear tarjetas de regalo</li>
+                                    <li>Privacidad</li>
+                                    <li>Prueba de velocidad</li>
+                                    <li>Preguntas frecuentes</li>
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                            
+                            <div class="lista-footer">
+                                
+                                <ul>
+                                    <li>Prensa</li>
+                                    <li>Comprar tarjetas de regalo</li>
+                                    <li>Preferencias de cookies</li>
+                                    <li>Avisos legales</li>
+                                    <li>Terminos y Condiciones</li>
+                                </ul>
+                                
+                            </div>
+
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 footer-language">
+
+                    <nav class="navbar navbar-expand-lg bg-none w-100" style="padding: 32px;">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-left" id="navbarNav" style="margin-right: 95px">
+                            <ul class="nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded >
+                                        <svg viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" data-icon-id=":R8pbaml6lalalalb96:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M10.77 5.33 10.5 6 9.34 8.94l-.57 1.44L7.33 14h1.78l.73-1.97h3.58l.74 1.97H16l-3.43-8.67zm-.15 4.6-.24.63h2.51l-1.26-3.35zm-1.1-5.09.1-.19h-3.2V2h-1.5v2.65H.55V6h3.77A11 11 0 0 1 0 10.43c.33.28.81.8 1.05 1.16 1.5-.91 2.85-2.36 3.88-4.02v5.1h1.49V7.52q.6.95 1.33 1.8l.57-1.43a12 12 0 0 1-1.34-1.9h2.09z" clip-rule="evenodd"></path></svg>Idioma
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Español</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Inglés</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 footer-end">
+
+                        <div class="copy">
+
+                            <h5>
+                            Wolflix Colombia
+                            </h5>
+
+                            <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</p>
+
+                        </div>
+
+                    </div>
+
+            </div>
 
         </div>
     </div>
