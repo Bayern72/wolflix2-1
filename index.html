@@ -518,6 +518,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
 
         .info-card {
@@ -792,7 +793,271 @@
             margin-bottom: 25px;
             color: rgb(109, 108, 108);
         }
-        
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .beneficios {
+                height: 1250px;
+                gap: 50px;
+            }
+
+            .ben-card {
+                margin-bottom: 50px;
+            }
+
+            .header {
+                height: 700px;
+            } 
+
+            .hero {
+                height: 640px;
+            }
+
+            .navbar {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .navbar-toggler {
+                margin-right: 20px;
+                border: 1px solid white;
+                padding: 5px 10px !important;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2C255%2C255%2C1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+            }
+
+            .container-menu {
+                padding-left: 30px;
+                flex-wrap: wrap;
+            }
+
+            #navbarNav {
+                position: absolute !important;
+                top: 120px !important; 
+                right: -60px !important;     
+                width: 90% !important; 
+                min-width: 220px !important;
+                background-color: rgba(0, 0, 0, 0.95) !important;
+                border-radius: 8px !important;
+                padding: 15px 7px !important;
+                z-index: 9999 !important;
+            }
+
+            #navbarNav .nav {
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 20px 0 !important;
+                width: 100%;
+            }
+
+            #navbarNav .nav-link {
+                color: white !important;
+                padding: 12px 15px !important;
+                text-align: right;
+            }
+
+            .btn-login {
+                display: block;
+                text-align: center;
+            }
+
+            #navbarNav .btn-login {
+                text-align: center;
+                padding: 10px 20px !important;
+            }
+
+            .navbar {
+                padding: 15px 20px !important;
+                position: relative !important;
+            }
+
+            .navbar-collapse .nav {
+                flex-direction: column !important;
+                align-items: flex-end !important;
+                gap: 30px !important;
+            }   
+
+            .footer-language {
+                height: 150px;
+                margin-top: 50px;
+                justify-content: flex-start;
+            }
+
+        }
+
+        @media (min-width: 300px) and (max-width: 767px) {
+            .beneficios {
+                height: 1750px;
+                gap: 50px;
+            }
+
+            .ben-card {
+                height: 330px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header {
+                height: 670px;
+            } 
+
+            .info-card {
+                width: 90%;
+                height: 300px;
+                background: linear-gradient(170deg,rgba(25, 33, 69, 1) 0%, rgba(28, 29, 57, 1) 33%, rgba(30, 21, 40, 1) 67%, rgba(33, 14, 23, 1) 100%);
+                padding: 20px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                overflow: hidden;
+            }
+
+            .hero {
+                height: 570px;
+            }
+
+            .navbar {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .navbar-toggler {
+                margin-right: 20px;
+                border: 1px solid white;
+                padding: 5px 10px !important;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2C255%2C255%2C1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+            }
+
+            .container-menu {
+                padding-left: 30px;
+                flex-wrap: wrap;
+            }
+
+            .cards {
+                height: 900px;
+            }
+
+            #navbarNav {
+                position: absolute !important;
+                top: 120px !important; 
+                right: -60px !important;     
+                width: 90% !important; 
+                min-width: 220px !important;
+                background-color: rgba(0, 0, 0, 0.95) !important;
+                border-radius: 8px !important;
+                padding: 15px 7px !important;
+                z-index: 9999 !important;
+            }
+
+            #navbarNav .nav {
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 20px 0 !important;
+                width: 100%;
+            }
+
+            #navbarNav .nav-link {
+                color: white !important;
+                padding: 12px 15px !important;
+                text-align: right;
+            }
+
+            .btn-login {
+                display: block;
+                text-align: center;
+            }
+
+            #navbarNav .btn-login {
+                text-align: center;
+                padding: 10px 20
+            
+            }
+
+            .footer-language {
+                height: 350px;
+                margin-top: 50px;
+                justify-content: flex-start;
+                background-color: #ff7979;
+            }
+
+            .footer-end {
+                height: 550px;
+                display: flex;
+                justify-content: center;
+                background-color: #eccece;
+            }
+
+            .copy {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+
+             .copy h5 {
+                font-size: 22px;
+                margin-bottom: 25px;
+                color: rgb(163, 160, 160);
+            }
+
+            .mini-log-container {
+                height: 200px;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer {
+                height: 2700px;
+                background-color: #030303;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-footer {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contain-list {
+                width: 100%;
+                height: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+             .lista-footer ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+             .lista-footer ul li {
+                margin-bottom: 12px;
+                color: #aca7a7;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        } 
 
     </style>
 </head>
@@ -969,7 +1234,7 @@
                 <div class="beneficios-container">
                     
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ben-card">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 ben-card">
                             <div class="info-card">
 
                                 <div class="info-card-text">
@@ -983,7 +1248,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ben-card">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 ben-card">
                             <div class="info-card">
 
                                 <div class="info-card-text">
@@ -999,7 +1264,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ben-card">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 ben-card">
                             <div class="info-card">
 
                                 <div class="info-card-text">
@@ -1015,7 +1280,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ben-card">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 ben-card">
                             <div class="info-card">
 
                                 <div class="info-card-text">
@@ -1219,30 +1484,28 @@
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 footer-language">
 
-                    <nav class="navbar navbar-expand-lg bg-none w-100" style="padding: 32px;">
+                    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm" style="padding: 62px">
+                        <div class="container-fluid container-menu">
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse justify-content-left" id="navbarNav" style="margin-right: 95px">
-                            <ul class="nav">
-                                <li class="nav-item dropdown" footerPhone >
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded >
-                                        <svg viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" data-icon-id=":R8pbaml6lalalalb96:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M10.77 5.33 10.5 6 9.34 8.94l-.57 1.44L7.33 14h1.78l.73-1.97h3.58l.74 1.97H16l-3.43-8.67zm-.15 4.6-.24.63h2.51l-1.26-3.35zm-1.1-5.09.1-.19h-3.2V2h-1.5v2.65H.55V6h3.77A11 11 0 0 1 0 10.43c.33.28.81.8 1.05 1.16 1.5-.91 2.85-2.36 3.88-4.02v5.1h1.49V7.52q.6.95 1.33 1.8l.57-1.43a12 12 0 0 1-1.34-1.9h2.09z" clip-rule="evenodd"></path></svg>Idioma
-                                    </a>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 95px">
+                                <ul class="nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded >
+                                            <svg viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" data-icon-id=":R8pbaml6lalalalb96:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M10.77 5.33 10.5 6 9.34 8.94l-.57 1.44L7.33 14h1.78l.73-1.97h3.58l.74 1.97H16l-3.43-8.67zm-.15 4.6-.24.63h2.51l-1.26-3.35zm-1.1-5.09.1-.19h-3.2V2h-1.5v2.65H.55V6h3.77A11 11 0 0 1 0 10.43c.33.28.81.8 1.05 1.16 1.5-.91 2.85-2.36 3.88-4.02v5.1h1.49V7.52q.6.95 1.33 1.8l.57-1.43a12 12 0 0 1-1.34-1.9h2.09z" clip-rule="evenodd"></path></svg>Idioma
+                                        </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="#">Español</a>
+                                                <a class="dropdown-item" href="#" onclick="setLang('es')">Español</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">Inglés</a>
+                                                <a class="dropdown-item" href="#" onclick="setLang('en')" >Inglés</a>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
-                        </nav>
+                        </div>
+                    </nav>
 
                 </div>
 
